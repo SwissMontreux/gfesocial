@@ -1,0 +1,19 @@
+{
+  "name": "db",
+  "module": "dbconnector",
+  "action": "connect",
+  "options": {
+    "client": "postgres",
+    "connection": {
+      "host": "db-postgresql-lon1-15473-do-user-659009-0.b.db.ondigitalocean.com",
+      "port": 25060,
+      "user": "jsmfscrm-dev",
+      "password": "AVNS_Y0ESdwzQYTd5MRfOdwT",
+      "database": "jsmfscrm-dev",
+      "ssl": {
+        "rejectUnauthorized": false
+      }
+    }
+  },
+  "fileName": "db.json"
+}
