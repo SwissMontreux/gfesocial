@@ -31,32 +31,34 @@
                 </div>
                 <div class="tab-content">
                     <div id="home" class="container tab-pane active sign_in animate__animated animate__fadeInLeft"><br>
-                        <form class="mt-2" action="performers">
-                            <div class="form-group did-floating-label-content">
-                                <input type="text" class="did-floating-input" placeholder="Enter your Email Address...">
-                                <label class="did-floating-label">Email Address</label>
-                            </div>
-                            <div class="form-group did-floating-label-content">
-                                <input type="Password" class="did-floating-input" placeholder="Enter your Password...">
-                                <label class="did-floating-label">Password</label>
+                        <form class="mt-2">
+                            <div class="row">
+                                <div class="form-group did-floating-label-content">
+                                    <input type="text" class="did-floating-input" placeholder="Enter your Email Address...">
+                                    <label class="did-floating-label">Email Address</label>
+                                </div>
+                                <div class="form-group did-floating-label-content" id="password" style="margin-top: -8px;">
+                                    <input type="Password" class="did-floating-input" placeholder="Enter your Password..." id="passwd"><i class="fas fa-eye-slash float-end" id="togglePassword"></i>
+                                    <label class="did-floating-label">Password</label>
+                                </div>
                             </div>
                             <div class="row">
                                 <div class="col-6 text-center">
                                     <button class="btn3">Forget Password?</button>
                                 </div>
                                 <div class="col-6">
-                                    <button class="btn d-block mx-auto btn1" type="submit">Sign In</button>
+                                    <a href="performers"><button type="button" class="btn d-block mx-auto btn1">Sign In</button></a>
                                 </div>
                             </div>
 
                         </form>
-                        <div class="row text-center mt-2">
+                        <div class="row text-center mt-4">
                             <div class="col">
                                 <span class="social-text">Or use a social account to login</span>
                             </div>
                         </div>
 
-                        <div class="row text-center mt-2">
+                        <div class="row text-center mt-4">
                             <div class="social-btns">
                                 <button><i class="fab fa-google"></i></button>
                                 <button><i class="fab fa-apple"></i></button>
@@ -72,13 +74,13 @@
                                 <input type="text" class="did-floating-input" placeholder="Enter your Email Address...">
                                 <label class="did-floating-label">Email Address</label>
                             </div>
-                            <div class="form-group did-floating-label-content">
-                                <input type="Password" class="did-floating-input" placeholder="Enter your Password...">
+                            <div class="form-group did-floating-label-content" id="password1" style="margin-top: -8px;">
+                                <input type="Password" class="did-floating-input" placeholder="Enter your Password..." id="passwd1"><i class="fas fa-eye-slash float-end" id="togglePassword1"></i>
                                 <label class="did-floating-label">Password</label>
                             </div>
                             <div class="row">
                                 <div class="col">
-                                    <button class="btn d-block mx-auto btn2">Create Account</button>
+                                    <a href="performers"><button type="button" class="d-block mx-auto btn2">Create Account</button> </a>
 
                                 </div>
 
@@ -88,13 +90,13 @@
 
 
                         </form>
-                        <div class="row text-center mt-2">
+                        <div class="row text-center mt-4">
                             <div class="col">
                                 <span class="social-text">Sign Up using a social account</span>
                             </div>
                         </div>
 
-                        <div class="row text-center mt-2">
+                        <div class="row text-center mt-4">
                             <div class="social-btns">
                                 <button><i class="fab fa-google"></i></button>
                                 <button><i class="fab fa-apple"></i></button>

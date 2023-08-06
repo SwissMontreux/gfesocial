@@ -1,10 +1,14 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
 
+body a{
+  text-decoration: none;
+}
 body {
     overflow-x: scroll;
     
@@ -16,8 +20,24 @@ b{
     
 }
 
+#body {
+  
+ 
+  background:
+   
+    radial-gradient(farthest-side, cyan 100%, transparent) top right/250px 250px,
+    radial-gradient(farthest-side,blue    100%,transparent) top left/250px 250px,
+    radial-gradient(farthest-side,orange   100%,transparent) 70px 100px/250px 250px;
+    
+    /* the circle                                          position / size */
+  background-repeat:no-repeat;
+  -webkit-backdrop-filter:blur(15px);
+          backdrop-filter:blur(15px);
+  height: 100vh;
+}
+
 .title{
-    margin-top: 50px;
+    margin-top: 140px;
 }
 
 .box{
@@ -27,7 +47,7 @@ b{
 }
 
 .nav-pills .nav-link{
-    color: #ddd !important;
+    color: #57636C !important;
     border-radius: 0 !important;
     font-size: 16px;
     font-weight: 600;
@@ -44,6 +64,7 @@ b{
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
     font-size: 14px;
+    margin-top: -10px !important;
 }
 
 
@@ -79,7 +100,8 @@ b{
     background: #f1f4f8;
     border: 1px solid #E0E3E7;
     border-radius: 8px;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     
     &:focus{
       outline:none;
@@ -95,15 +117,60 @@ b{
     opacity: 1;
   }
 
+  .did-floating-input:not(:-moz-placeholder-shown) ~ .did-floating-label {
+    top:-8px;
+    font-size:13px;
+  }
+
+  .did-floating-input:not(:-ms-input-placeholder) ~ .did-floating-label {
+    top:-8px;
+    font-size:13px;
+  }
+
   .did-floating-input:not(:placeholder-shown) ~ .did-floating-label {
     top:-8px;
     font-size:13px;
   }
 
+input::-webkit-input-placeholder{
+    opacity: 0;
+}
+
+input::-moz-placeholder{
+    opacity: 0;
+}
+
+input:-ms-input-placeholder{
+    opacity: 0;
+}
+
+input::-ms-input-placeholder{
+    opacity: 0;
+}
+
 input::placeholder{
     opacity: 0;
 }
+input:focus::-webkit-input-placeholder {opacity: 1;}
+input:focus::-moz-placeholder {opacity: 1;}
+input:focus:-ms-input-placeholder {opacity: 1;}
+input:focus::-ms-input-placeholder {opacity: 1;}
 input:focus::placeholder {opacity: 1;}
+
+#password i{
+  margin-top: -30px !important;
+  margin-right: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  color:#57636C; 
+}
+#password1 i{
+  margin-top: -30px !important;
+  margin-right: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  color:#57636C; 
+}
 
 .btn1{
     color: #ffffff !important;
@@ -116,7 +183,8 @@ input:focus::placeholder {opacity: 1;}
     font-size: 16px !important;
     font-weight: 600 !important;
     font-family: 'Poppins', sans-serif;
-    box-shadow: 0 4px 6px 0 #57636C !important;
+    -webkit-box-shadow: 0 1px 7px 0 #57636C !important;
+            box-shadow: 0 1px 7px 0 #57636C !important;
 }
 
 .btn2{
@@ -130,7 +198,9 @@ input:focus::placeholder {opacity: 1;}
     font-size: 16px !important;
     font-weight: 600 !important;
     font-family: 'Poppins', sans-serif;
-    box-shadow: 0 4px 6px 0 #57636C !important;
+    -webkit-box-shadow: 0 1px 7px 0 #57636C !important;
+            box-shadow: 0 1px 7px 0 #57636C !important;
+  
 }
 
 .btn3{
@@ -156,16 +226,22 @@ input:focus::placeholder {opacity: 1;}
 
 .social-btns{
     display: inline;
-    
+}
+
+.social-btns button:nth-child(2){
+  margin-left: 20px;
+}
+.social-btns button:nth-child(3){
+  margin-left: 20px;
 }
 
 .social-btns button{
     width: 44px;
     height: 44px;
-    border-width: 1px;
+    border: 1px solid  #E0E3E7;
     border-radius: 12px;
     padding: 5px;
-    border-color: #E0E3E7;
+   
     font-size: 16px;
     background-color: transparent;
 }
@@ -193,20 +269,22 @@ input:focus::placeholder {opacity: 1;}
 .p-btn {
     border: none;
     outline: none;
-    padding: 10px 16px;
+    padding: 6px 16px;
     background-color: #f1f1f1;
     cursor: pointer;
     margin-left: 10px;
     font-size: 12px;
     border-radius: 16px;
     border-width: 1;
+    font-weight: 600;
   }
   
   /* Style the active class (and buttons on mouse-over) */
   .p-active {
     background-color: #6f61ef;
     color: white;
-    box-shadow: 0 4px 6px 0 #57636C !important;
+    -webkit-box-shadow: 0 4px 6px 0 #57636C !important;
+            box-shadow: 0 4px 6px 0 #57636C !important;
 
   }
 
@@ -235,13 +313,20 @@ input:focus::placeholder {opacity: 1;}
 
   .card{
     border-radius: 8px !important;
-    box-shadow: 0 2px 4px #34090F13 !important;
+    -webkit-box-shadow: 0 2px 10px #34090F13 !important;
+            box-shadow: 0 2px 10px #34090F13 !important;
     width: 160px;
     height: 140px;
   }
 
   .card-div .col-6{
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .per_content a{
+    text-decoration: none;
   }
 
   .bottom-appbar {
@@ -252,31 +337,42 @@ input:focus::placeholder {opacity: 1;}
     right: 0;
     z-index: 20;
     border-top: 1px solid #eee;
-    box-shadow: 1x 1x 3px #c52424, -1px -1px 3px #d34343;
+    border-width: 2;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
     
-    background-color: #e5e7eb;
+    background-color: #eee;
     .tabs {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      flex-direction: row;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
       height: 100%;
       .tab {
         &--left {
           width: 100%;
           border-top-right-radius: 30px;
           border-top: 1px solid rgba(167, 161, 161, 0.69);
-          box-shadow: 0px 6px 7px 0px rgba(23, 23, 23, 0.28);
+          -webkit-box-shadow: 0px 6px 7px 0px rgba(23, 23, 23, 0.28);
+                  box-shadow: 0px 6px 7px 0px rgba(23, 23, 23, 0.28);
         }
         &--right {
           width: 100%;
           border-top-left-radius: 30px;
           border-top: 1px solid rgba(167, 161, 161, 0.69);
-          box-shadow: 15px 4px 15px 0px rgba(23, 23, 23, 0.28);
+          -webkit-box-shadow: 15px 4px 15px 0px rgba(23, 23, 23, 0.28);
+                  box-shadow: 15px 4px 15px 0px rgba(23, 23, 23, 0.28);
         }
         &--fab {
           width: 180px;
           height: 100%;
           background: transparent;
           border: none;
+          display: -webkit-box;
+          display: -ms-flexbox;
           display: flex;
           
           .top {
@@ -285,20 +381,31 @@ input:focus::placeholder {opacity: 1;}
             border-bottom-left-radius: 100px;
             border-bottom-right-radius: 100px;
             background-color: transparent;
-            box-shadow: 0px 30px 0px 25px #fff;
+            -webkit-box-shadow: 0px 30px 0px 25px #fff;
+                    box-shadow: 0px 30px 0px 25px #fff;
             border-bottom: 1px solid rgba(167, 161, 161, 0.69);
+            display: -webkit-box;
+            display: -ms-flexbox;
             display: flex;
           }
         }
         background-color: #fff;
         width: 33.4%;
         height: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        border-top: 1px solid #eee;
-        box-shadow: 1x 1x 3px #c52424, -1px -1px 3px #d34343;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+       
         font-size: 24px;
         span {
           font-size: 12px;
@@ -313,17 +420,23 @@ input:focus::placeholder {opacity: 1;}
       .fab {
         border-radius: 50%;
         background-color: #6f61ef;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: center;
-        align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         width: 70px;
         height: 70px;
         font-weight: 600;
         font-size: 50px;
         color: #fff;
         position: relative;
-        justify-content: center;
-        transform: translate(2px,-60%);
+        -webkit-transform: translate(2px,-60%);
+                transform: translate(2px,-60%);
         margin-top: 40px;
         font-family: 'Poppins', sans-serif;
       }
@@ -344,6 +457,9 @@ input:focus::placeholder {opacity: 1;}
     border-radius: 10px;
     background-color:rgba(38, 0, 255, 0.2);
     cursor: pointer;
+    width: 50px;
+    height: 50px;
+    text-align: center;
   }
 
 #content_wrapper{
@@ -355,45 +471,62 @@ input:focus::placeholder {opacity: 1;}
     margin-top: -100px;
     padding: 15px;
     border: none !important;
-    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+            box-shadow: none !important;
 }
 
-#content_wrapper .col .imgg{
+#content_wrapper  .imgg{
     width: 50px;
     height: 50px;
     border-radius: 50%;
 }
-#content_wrapper .col .img,.text{
+#content_wrapper .img,.text{
     text-align: center;
     padding: 5px;
     
    
 }
-#content_wrapper .col .text{
+#content_wrapper .post_stats{
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 5px;
+}
+#content_wrapper  .text{
     border-radius: 8px;
     background-color: #ffffff;
     line-height: 18px;
+    margin-left: 5px;
+    width: 70px;
+    height: 43px;
     
 }
 
-#content_wrapper .col .last{
+#content_wrapper  .last{
     border-radius: 8px;
     background-color: #ffffff;
     line-height: 18px;
-    height: 50px;
+    height: 43px;
+    width: 30px;
     
    
 }
 
-#content_wrapper .col .txt1{
+#content_wrapper  .txt1{
     font-size: 14px;
     font-weight: 600;
     color: #101213;
+    margin-top: 20px;
 }
-#content_wrapper .col .txt2{
+#content_wrapper  .txt2{
     font-size: 8px;
     font-weight: 600;
-    color: #101213;
+    color: #B3B3B3;
+    
+}
+
+.user{
+  line-height: 18px;
 }
 
 .name{
@@ -423,9 +556,6 @@ input:focus::placeholder {opacity: 1;}
     color: #101213;
 }
 
-.name i{
-    color: #4B39EF;
-}
 .posts .user_id{
     font-size: 10px;
     font-weight: 400;
