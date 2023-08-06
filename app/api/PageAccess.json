@@ -1,0 +1,9 @@
+{
+  "name": "redirect",
+  "module": "core",
+  "action": "redirect",
+  "options": {
+    "url": "/login"
+  },
+  "output": true
+}

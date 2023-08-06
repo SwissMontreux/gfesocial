@@ -1,0 +1,26 @@
+{
+  "routes": [
+    {
+      "path": "/",
+      "page": "index",
+      "routeType": "page",
+      "layout": "main",
+      "exec": "/api/PageAccess"
+    },
+    {
+      "path": "/login",
+      "page": "login",
+      "layout": "main"
+    },
+    {
+      "path": "/profile",
+      "page": "profile",
+      "layout": "main"
+    },
+    {
+      "path": "/performers",
+      "page": "performers",
+      "layout": "main"
+    }
+  ]
+}

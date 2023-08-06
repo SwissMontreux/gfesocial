@@ -1,0 +1,18 @@
+{
+  "login.ejs": {
+    "layoutPage": "main",
+    "description": ""
+  },
+  "performars.ejs": {
+    "layoutPage": "main",
+    "description": ""
+  },
+  "profile.ejs": {
+    "layoutPage": "main",
+    "description": ""
+  },
+  "performers.ejs": {
+    "layoutPage": "main",
+    "description": ""
+  }
+}
