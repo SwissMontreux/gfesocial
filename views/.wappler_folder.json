@@ -1,6 +1,6 @@
 {
   "login.ejs": {
-    "layoutPage": "main",
+    "layoutPage": "main-login",
     "description": ""
   },
   "performars.ejs": {

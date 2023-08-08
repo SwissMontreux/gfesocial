@@ -10,7 +10,7 @@
     {
       "path": "/login",
       "page": "login",
-      "layout": "main"
+      "layout": "main-login"
     },
     {
       "path": "/profile",
