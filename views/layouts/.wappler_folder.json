@@ -1,5 +1,8 @@
 {
   "main-login.ejs": {
     "description": ""
+  },
+  "login-layout.ejs": {
+    "description": ""
   }
 }

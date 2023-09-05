@@ -4,23 +4,13 @@
       "path": "/",
       "page": "index",
       "routeType": "page",
-      "layout": "main",
-      "exec": "/api/PageAccess"
+      "layout": "login-layout",
+      "exec": ""
     },
     {
-      "path": "/login",
-      "page": "login",
-      "layout": "main-login"
-    },
-    {
-      "path": "/profile",
-      "page": "profile",
-      "layout": "main"
-    },
-    {
-      "path": "/performers",
-      "page": "performers",
-      "layout": "main"
+      "path": "/login-signup",
+      "page": "login-signup",
+      "layout": "login-layout"
     }
   ]
 }

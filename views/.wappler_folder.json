@@ -14,5 +14,13 @@
   "performers.ejs": {
     "layoutPage": "main",
     "description": ""
+  },
+  "index.ejs": {
+    "layoutPage": "login-layout",
+    "description": ""
+  },
+  "login-signup.ejs": {
+    "layoutPage": "login-layout",
+    "description": ""
   }
 }
